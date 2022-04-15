@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-policlinic-app',
+  selector: 'policlinic-app',
   templateUrl: './policlinic-app.component.html',
   styleUrls: ['./policlinic-app.component.scss']
 })
