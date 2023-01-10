@@ -1,0 +1,62 @@
+.picturized {
+    background-image: url('../../../assets/building.jpg');
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 50px;
+    padding: 30px;
+
+    .about-us-box {
+        height: 200px;
+        background-color: aliceblue;
+        padding: 30px;
+
+        .about-us {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        
+        .intro-text {
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+}
+
+.image {
+    margin: 15px;
+    &.reduced {
+        width: 390px;
+        height: 260px;
+    }
+}
+
+.subhead {
+    font-size: 30px;
+    margin-top: 20px;
+    &.centered {
+        text-align: center;
+    }
+}
+
+.about-us-text {
+    font-size: 16px;
+    &.centered {
+        text-align: center;
+    }
+}
+
+.mission-box {
+    border-color: lightblue;
+    border-style: solid;
+    border-width: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.intro-sentence {
+    font-size: 20px;
+}
+
+.mission-x {
+    width: 25%;
+}
