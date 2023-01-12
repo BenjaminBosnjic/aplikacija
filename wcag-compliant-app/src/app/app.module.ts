@@ -10,11 +10,15 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
-import { LocationsComponent } from './components/locations/locations.component';
+import { PriceListComponent } from './components/price-list/price-list.component';
 import { ServicesComponent } from './components/services/services.component';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
 import { BookingComponent } from './components/booking/booking.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component'; 
+
+import { LoginService } from './services/login.service';
+import { CatalogueService } from './services/catalogue.service';
 
 @NgModule({
   declarations: [
@@ -23,11 +27,12 @@ import { FooterComponent } from './components/footer/footer.component';
     NavigationComponent,
     HomepageComponent,
     AboutUsComponent,
-    LocationsComponent,
+    PriceListComponent,
     ServicesComponent,
     CatalogueComponent,
     BookingComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,10 @@ import { FooterComponent } from './components/footer/footer.component';
     NoopAnimationsModule,
     MatMenuModule
   ],
-  providers: [],
+  providers: [
+    LoginService,
+    CatalogueService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

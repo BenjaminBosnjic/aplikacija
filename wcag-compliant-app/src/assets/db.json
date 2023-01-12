@@ -1,0 +1,14 @@
+{
+    "members": [
+        { "email": "benjamin.bosnjic@gmail.com", "password": "Benjo1234!" },
+        { "email": "nedim.bosnjic@gmail.com", "password":"Nedim1234!" }
+    ],
+
+    "items": [
+        {  }
+    ],
+
+    "services": [
+        { }
+    ]
+  }
