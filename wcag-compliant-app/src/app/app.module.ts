@@ -19,6 +19,7 @@ import { LoginComponent } from './components/login/login.component';
 
 import { LoginService } from './services/login.service';
 import { CatalogueService } from './services/catalogue.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { CatalogueService } from './services/catalogue.service';
     AppRoutingModule,
     HttpClientModule,
     NoopAnimationsModule,
-    MatMenuModule
+    MatMenuModule,
+    ReactiveFormsModule
   ],
   providers: [
     LoginService,
