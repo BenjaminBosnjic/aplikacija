@@ -11,7 +11,7 @@
             <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/services" routerLinkActive="active">Services</a>
+            <a class="nav-link" routerLink="/employment" routerLinkActive="active">Employment</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/prices" routerLinkActive="active">Price List</a>
@@ -25,9 +25,20 @@
         </ul>
       </div>
       <button class="btn btn-warning check-up" routerLink="/booking" type="submit"><b>BOOK A CHECK-UP</b></button>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search 
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+      </form>
+      
+      <button class="btn btn-primary check-up" routerLink="/login" type="submit"> 
+        <b>LOG IN </b>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+        </svg>
+      </button>
     </div>
   </nav>

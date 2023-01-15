@@ -4,6 +4,15 @@
         { "email": "nedim.bosnjic@gmail.com", "password":"Nedim1234!" }
     ],
 
+    "cards": [
+        { "imgUrl": "./assets/surgery.jpg", "title": "Inernal services", "text": "List of available invasive procedures.", "alt": "Image with surgreons operating" },
+        { "imgUrl": "./assets/credential.jpg", "title": "Medical credentials", "text": "If you need a credential for something, check here.", "alt": "Image with a medical document" },
+        { "imgUrl": "./assets/ct.jpg", "title": "Radialogy services", "text": "Need more medical info that can not be obtained regulary? Check here.", "alt": "Image with a CT machine in use" },
+        { "imgUrl": "./assets/plastic.PNG", "title": "Plastic surgery", "text": "Listing all of the possible facial restructuring procedures.", "alt": "Image with a patient having their face marked for plastic surgery" },
+        { "imgUrl": "./assets/ophtamology.jpg", "title": "Ophthalmology services", "text": "If you need to see our available eye procedures, this is the place to go.", "alt": "Image with a patient having their eyes tested" },
+        { "imgUrl": "./assets/manicure.PNG", "title": "Cosmetics", "text": "For all regular cosmetic procedures, check here.", "alt": "Image with hands during a manicure procedure" }
+    ],
+
     "items": [
         {  }
     ],

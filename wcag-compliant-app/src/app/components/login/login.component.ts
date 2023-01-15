@@ -27,6 +27,5 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  get
 
 }

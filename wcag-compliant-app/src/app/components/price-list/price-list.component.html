@@ -1,1 +1,12 @@
-<p>locations works!</p>
+<h1 class="text-center">Prices for various services</h1><hr>
+
+<div class="card-container">
+    <div *ngFor="let singleCard of cards" class="card single-card mb-5">
+        <div class="card-img"><img [src]="singleCard.imgUrl" class="card-img-top" [alt]="singleCard.alt"></div>
+        <div class="card-body">
+          <h2 class="card-title" [innerHTML]="singleCard.title"></h2>
+          <p class="card-text" [innerHTML]="singleCard.text"></p>
+          <a href="#" class="btn btn-primary button-price">Go to price list</a>
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,19 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .single-card {
+        width: 500px !important;
+
+        .card-img {
+            max-height: 280px;
+            overflow: hidden;
+        }
+
+        .button-price {
+            width: 100% !important;
+        }
+    }
+}

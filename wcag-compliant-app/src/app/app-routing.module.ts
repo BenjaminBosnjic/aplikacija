@@ -6,13 +6,13 @@ import { CatalogueComponent } from './components/catalogue/catalogue.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { LoginComponent } from './components/login/login.component';
 import { PriceListComponent } from './components/price-list/price-list.component';
-import { ServicesComponent } from './components/services/services.component';
+import { EmploymentComponent } from './components/employment/employment.component';
 
 const routes: Routes = [
   { path: 'home', component: HomepageComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'prices', component: PriceListComponent },
-  { path: 'services', component: ServicesComponent },
+  { path: 'employment', component: EmploymentComponent },
   { path: 'catalogue', component: CatalogueComponent },
   { path: 'booking', component: BookingComponent },
   { path: 'login', component: LoginComponent },
