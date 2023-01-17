@@ -7,11 +7,13 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { LoginComponent } from './components/login/login.component';
 import { PriceListComponent } from './components/price-list/price-list.component';
 import { EmploymentComponent } from './components/employment/employment.component';
+import { PricesComponent } from './prices/prices.component';
 
 const routes: Routes = [
   { path: 'home', component: HomepageComponent },
   { path: 'about-us', component: AboutUsComponent },
-  { path: 'prices', component: PriceListComponent },
+  { path: 'price-list', component: PriceListComponent },
+  { path: 'prices/:id', component: PricesComponent },
   { path: 'employment', component: EmploymentComponent },
   { path: 'catalogue', component: CatalogueComponent },
   { path: 'booking', component: BookingComponent },

@@ -13,5 +13,12 @@ export class PriceListService {
     getCards(): any {
         return this.http.get('http://localhost:3000/cards');
     }
+
+    getCard(id: number): any {
+        return this.http.get('http://localhost:3000/cards/' + id);
+    }
     
+    getPrices(serviceId: number): any {
+        return this.http.get('http://localhost:3000/services?serviceId='+ serviceId)
+    }
 }

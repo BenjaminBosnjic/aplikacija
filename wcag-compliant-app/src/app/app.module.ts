@@ -21,6 +21,7 @@ import { LoginComponent } from './components/login/login.component';
 import { LoginService } from './services/login.service';
 import { CatalogueService } from './services/catalogue.service';
 import { PriceListService } from './services/price-list.service';
+import { PricesComponent } from './prices/prices.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PriceListService } from './services/price-list.service';
     CatalogueComponent,
     BookingComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    PricesComponent
   ],
   imports: [
     BrowserModule,

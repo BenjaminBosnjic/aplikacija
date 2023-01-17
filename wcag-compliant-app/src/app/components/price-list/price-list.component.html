@@ -6,7 +6,7 @@
         <div class="card-body">
           <h2 class="card-title" [innerHTML]="singleCard.title"></h2>
           <p class="card-text" [innerHTML]="singleCard.text"></p>
-          <a href="#" class="btn btn-primary button-price">Go to price list</a>
+          <a (click)="goToPrices(singleCard.id)" class="btn btn-primary button-price">Go to price list</a>
         </div>
     </div>
 </div> 
