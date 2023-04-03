@@ -22,6 +22,7 @@ import { LoginService } from './services/login.service';
 import { CatalogueService } from './services/catalogue.service';
 import { PriceListService } from './services/price-list.service';
 import { PricesComponent } from './prices/prices.component';
+import { ItemInfoComponent } from './item-info/item-info.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PricesComponent } from './prices/prices.component';
     BookingComponent,
     FooterComponent,
     LoginComponent,
-    PricesComponent
+    PricesComponent,
+    ItemInfoComponent
   ],
   imports: [
     BrowserModule,
