@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CatalogueService } from 'src/app/services/catalogue.service';
+import { MatDialog } from '@angular/material/dialog';
+import { CatalogueItemComponent } from '../catalogue-item/catalogue-item.component';
 
 @Component({
   selector: 'app-catalogue',
@@ -9,7 +11,8 @@ import { CatalogueService } from 'src/app/services/catalogue.service';
 export class CatalogueComponent implements OnInit {
 
   constructor(
-    private catalogueService: CatalogueService
+    private catalogueService: CatalogueService,
+    public dialog: MatDialog
   ) { }
 
   items: any;
@@ -34,6 +37,10 @@ export class CatalogueComponent implements OnInit {
     this.displayItems = this.items.filter((item) => {
       return item.type === type;
     });
+  }
+
+  openDialog(item: any) {
+    this.dialog.open(CatalogueItemComponent, { data: { item: item } });
   }
 
 }

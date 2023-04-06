@@ -13,4 +13,8 @@ export class CatalogueService {
   getItems(): any {
     return this.http.get('http://localhost:3000/items');
   }
+
+  getItem(id: number): any {
+    return this.http.get('http://localhost:3000/items/' + id);
+  }
 }

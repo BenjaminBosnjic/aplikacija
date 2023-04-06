@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BsModalService, ModalModule } from 'ngx-bootstrap/modal'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,8 @@ import { CatalogueService } from './services/catalogue.service';
 import { PriceListService } from './services/price-list.service';
 import { PricesComponent } from './prices/prices.component';
 import { ItemInfoComponent } from './item-info/item-info.component';
+import { CatalogueItemComponent } from './components/catalogue-item/catalogue-item.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,8 @@ import { ItemInfoComponent } from './item-info/item-info.component';
     FooterComponent,
     LoginComponent,
     PricesComponent,
-    ItemInfoComponent
+    ItemInfoComponent,
+    CatalogueItemComponent
   ],
   imports: [
     BrowserModule,
@@ -46,12 +50,15 @@ import { ItemInfoComponent } from './item-info/item-info.component';
     HttpClientModule,
     NoopAnimationsModule,
     MatMenuModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ModalModule,
+    MatDialogModule
   ],
   providers: [
     LoginService,
     CatalogueService,
-    PriceListService
+    PriceListService,
+    BsModalService
   ],
   bootstrap: [AppComponent]
 })
