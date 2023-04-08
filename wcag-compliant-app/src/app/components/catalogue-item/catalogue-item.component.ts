@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-catalogue-item',
@@ -10,10 +10,17 @@ export class CatalogueItemComponent implements OnInit {
 
   item:any
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data) { }
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data,
+    private dialogRef: MatDialogRef<CatalogueItemComponent>
+  ) { }
 
   ngOnInit(): void {
     this.item = this.data.item;
+  }
+
+  close() {
+    this.dialogRef.close();
   }
 
 }

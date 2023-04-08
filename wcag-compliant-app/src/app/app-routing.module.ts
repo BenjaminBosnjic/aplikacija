@@ -7,7 +7,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { LoginComponent } from './components/login/login.component';
 import { PriceListComponent } from './components/price-list/price-list.component';
 import { EmploymentComponent } from './components/employment/employment.component';
-import { PricesComponent } from './prices/prices.component';
+import { PricesComponent } from './components/prices/prices.component';
 
 const routes: Routes = [
   { path: 'home', component: HomepageComponent },

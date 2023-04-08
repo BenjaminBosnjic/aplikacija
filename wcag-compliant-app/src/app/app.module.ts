@@ -22,8 +22,8 @@ import { LoginComponent } from './components/login/login.component';
 import { LoginService } from './services/login.service';
 import { CatalogueService } from './services/catalogue.service';
 import { PriceListService } from './services/price-list.service';
-import { PricesComponent } from './prices/prices.component';
-import { ItemInfoComponent } from './item-info/item-info.component';
+import { PricesComponent } from './components/prices/prices.component';
+import { ItemInfoComponent } from './components/item-info/item-info.component';
 import { CatalogueItemComponent } from './components/catalogue-item/catalogue-item.component';
 import { MatDialogModule } from '@angular/material/dialog';
 
