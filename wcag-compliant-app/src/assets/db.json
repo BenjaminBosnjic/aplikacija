@@ -1,155 +1,910 @@
 {
-    "members": [
-        { "email": "benjamin.bosnjic@gmail.com", "password": "Benjo1234!" },
-        { "email": "nedim.bosnjic@gmail.com", "password":"Nedim1234!" }
-    ],
-
-    "cards": [
-        { "id": "1", "imgUrl": "./assets/surgery.jpg", "title": "Internal services", "text": "List of available invasive procedures.", "alt": "Image with surgreons operating" },
-        { "id": "2", "imgUrl": "./assets/manicure.PNG", "title": "Cosmetics", "text": "For all regular cosmetic procedures, check here.", "alt": "Image with hands during a manicure procedure" },
-        { "id": "3", "imgUrl": "./assets/credential.jpg", "title": "Medical credentials", "text": "If you need a credential for something, check here.", "alt": "Image with a medical document" },
-        { "id": "4", "imgUrl": "./assets/ophtamology.jpg", "title": "Ophthalmology services", "text": "If you need to see our available eye procedures, this is the place to go.", "alt": "Image with a patient having their eyes tested" },
-        { "id": "5", "imgUrl": "./assets/ct.JPG", "title": "Radialogy services", "text": "Need more medical info that can not be obtained regulary? Check here.", "alt": "Image with a CT machine in use" },
-        { "id": "6", "imgUrl": "./assets/plastic.PNG", "title": "Plastic surgery", "text": "Listing all of the possible facial restructuring procedures.", "alt": "Image with a patient having their face marked for plastic surgery" }
-    ],
-
-    "items": [
-        { "id": 1, "type": "tooth", "title": "PARADONTAX PASTE CLASSIC", "imageUrl": "./assets/paradontax.JPG", "alt": "Image with a box of toothpaste", "description": "Parodontax Fluoride toothpaste helps stop bleeding gums. <ul> <li>It also contains fluoride that prevents caries, so you can safely use it every day.</li> <li>Ingredients parodontax toothpaste consists of 70% medicinal active ingredients.</li> <li>It contains mineral salts and plant extracts that give it a unique taste.</li> <li>After 14 days of using parodontax toothpaste, most people liked its unique taste.</li></ul> <br> <br> HOW TO USE: Brush your teeth two and no more than three times a day, reduce swallowing the paste to a minimum and spit it out. <br><br> PACKAGING: 75 ml", "price": "11.99", "available": true },
-        { "id": 2, "type": "tooth", "title": "ORAL-B ESSENTIAL DENTAL FLOSS", "imageUrl": "./assets/OralB.JPG", "alt": "Image with a packaged dental floss product", "description": "<ul><li>mint flavored dental floss</li> <li>double-layer thread: strong and pleasant to handle</li> <li>silky texture</li> <li>glides easily, gentle on fingers and gums</li> <li>leaves a feeling of cleanliness and freshness in the mouth</li></ul> Complete your oral hygiene with dental floss. Oral-B Essential Mint dental floss slides easily between the teeth so you can clean even the most difficult places. The thread is strong and easy to handle. It is gentle on both fingers and gums, and leaves a fresh mint taste and a feeling of cleanliness in the mouth.", "price": "3.99", "available": true },
-        { "id": 3, "type": "tooth", "title": "ORAL-B ELECTRIC TOOTHBRUSH", "imageUrl": "./assets/Electric.JPG", "alt": "Image of a packaged electric toothbrush", "description": "The oscillating brush Oral B Vitality 100 CrossAction White Box is suitable in the fight against dental caries and unwanted discoloration of the tooth surface.<br><br> Properties:<ul><li>removes dental caries</li><li>it is compatible with a wide range of brush heads</li><li>signals the optimal time for washing</li></ul>", "price": "47.99", "available": false },
-        { "id": 4, "type": "tooth", "title": "CURAPROX ORTHO KIT PROFFESIONAL", "imageUrl": "./assets/Kit.JPG", "alt": "Image of an orthopedic kit", "description": "Set for orthodontic braces (ORTHO kit - brush set CS 5460 ortho and CS 1006, thread DF 834 and pocket set CPS 457 in a pencil case) <br><br> orthodontic set for everyone who has a fixed orthodontic appliance, which requires even more intensive care for the hygiene of the teeth and tissues around the teeth - above all in the places where the appliance and the surface of the teeth come into contact and under the wires of the appliance.", "price": "49.99", "available": false },
-        { "id": 5, "type": "tooth", "title": "CURAPROX BRUSH 5460 ULTRA SOFT", "imageUrl": "./assets/brushes.JPG", "alt": "Image of a packaged set of toothbrushes", "description": "The brush head with dense ultra-thin CUREN® fibers provides exceptional cleaning power. And it looks great too. <br><br> The worst enemy of dental plaque is the softness of CUREN® fibers:<br><br><ul><li>CS toothbrushes are really extremely gentle.</li><li>The 5460 CUREN® fibers of the CS 5460 brush form an extremely dense and effective cleaning surface.</li></ul>", "price": "10.99", "available": true },
-        { "id": 6, "type": "dermo", "title": "A-DERMA PROTECT INVISIBLE FLUID", "imageUrl": "./assets/invisible.JPG", "alt": "Image of cosmetic tube", "description": "<ul><li>Very high UVB + UVA protection for mixed to oily fragile skin.</li><li>Ultra-fast absorption.</li><li>It does not leave a white mark.</li><li>Instant absorption in 3 seconds</li><li>Waterproof.</li><li>Patented innovative active ingredient: Barriestolide® from Rhealba® oat shoot oil, strengthens and protects the skin barrier.</li></ul>Patented filter system: photostable, protects against UVB/UVA short and long wavelengths.", "price": "33.99", "available": true },
-        { "id": 7, "type": "dermo", "title": "AVENE CLEANSING FOAM 150 ML", "imageUrl": "./assets/foam.JPG", "alt": "Image of a cosmetic spray tube", "description": "<ul><li>Cleansing foam is intended for people with normal to mixed sensitive skin.</li> <li>Soap-free.</li><li>Removes impurities and makeup with carefully selected gentle skin cleansers. </li><li>It is suitable for cleaning both face and eyes.</li></ul>", "price": "30.99", "available": true },
-        { "id": 8, "type": "dermo", "title": "EUCERIN ANTI-PIGMENT NIGHT CREAM 50ml", "imageUrl": "./assets/anti.JPG", "alt": "Image of a cosmetic spray tube and packaging", "description": "It contains an advanced SPF15 plus triple-action complex, expertly formulated to fight skin pigmentation overnight. It fights the visible signs of aging and reduces dark spots and dullness to reveal a more radiant complexion.<ul><li>Night cream with thiamidol</li><li>Effectively reduces dark spots and prevents their reappearance</li><li>It supports skin regeneration during the night</li><li>Regenerating night care for more even, glowing skin</li></ul>", "price": "78.99", "available": false },
-        { "id": 9, "type": "imunity", "title": "SOLGAR CALCIUM MAGNESIUM BORON", "imageUrl": "./assets/boron.jpg", "alt": "Image with a bottle of tablets", "description": "The preparation contains three key nutrients (Calcium, Magnesium, Boron) for the health of bones and teeth<ul><li>for the health of the immune, muscular and nervous systems</li><li>for energy and against fatigue</li></ul>", "price": "27.99", "available": true },
-        { "id": 10, "type": "imunity", "title": "SOLGAR VIT C 500 mg CAPSULES A 100", "imageUrl": "./assets/vitc.JPG", "alt": "Image with a bottle of capsules", "description": "<ul><li>It contributes to the normal function of the immune system</li><li>Strong antioxidant effect<li>Contributes to the reduction of fatigue and exhaustion</li><li>It contributes to the normal formation of collagen for the normal function of blood vessels, bones, cartilage and bones</li></ul><br><br>The product contains vitamin C which<br><br><ul><li>contributes to the normal function of the immune system,</li><li>reducing fatigue and exhaustion,</li><li>normal collagen formation for normal skin function and</li><li>protect cells from oxidative stress.</li></ul>", "price": "39.99", "available": true },
-        { "id": 11, "type": "imunity", "title": "IMMUNACE CAPSULES - CELL PROTECTION", "imageUrl": "./assets/immunace.JPG", "alt": "Image with a box of capsules", "description": "The Immunace formula was developed on the basis of extensive research to support the immune system and long-term protection of cells, and it works in two ways:<br><br><ul><li>short-term - helps the body defend against infections and compensate for vitamin C, which is consumed more during a cold</li><li>long-term - increases the level of resistance of the organism and provides effective protection of cells.</li></ul>", "price": "24.99", "available": true },
-        { "id": 12, "type": "imunity", "title": "ORTHOMOL IMMUN A30 BAGS", "imageUrl": "./assets/immun.JPG", "alt": "Image with a blue box of medicine", "description": "Orthomol Immun is a dietary product for special medical use (balanced diet). <br><br><ul><li>It contains micronutrients in a complex composition and with a well-balanced, scientifically based dosage.</li><li>Orthomol Immun is used for the treatment of nutritionally conditioned immune deficits, related to diet, which you may encounter, for example, after chemotherapy and radiation.</li><li>Orthomol Immun is intended for people with a weakened immune system, for example after chemotherapy and radiation, in elderly people, in cases of acute and chronic infections and diseases, after surgery.</li></ul>", "price": "125.99", "available": true },
-        { "id": 13, "type": "eye", "title": "ORTHOMOL VISION A30 120 CPS", "imageUrl": "./assets/vision.JPG", "alt": "Image with a blue box of medicine", "description": "Orthomol® Vision is a dietary supplement, important micronutrients for the eyes.<br><br><ul><li>With vitamin A, vitamin B2 (riboflavin), zinc, omega and omega-3 fatty acids (DHA) to maintain normal vision.</li><li>With lutein and zeaxanthin.</li><li>Orthomol® Vision does not contain gluten or lactose</li><li>The recommended dose should not be exceeded.</li><li>A dietary supplement is not a substitute for a varied, balanced diet and a healthy lifestyle.</li></ul>", "price": "88.99", "available": true },
-        { "id": 14, "type": "eye", "title": "ORTHOMOL AMD EXTRA 120 CPS", "imageUrl": "./assets/extra.JPG", "alt": "Image with a blue box of medicine", "description": "Orthomol® AMD Extra is intended for the dietary treatment of advanced age-related macular degeneration. <br><br>What is Orthomol® AMD extra?<br><br>Orthomol® AMD extra is a dietary product with a special medical purpose. Orthomol® AMD extra is intended for the dietary treatment of advanced age-related macular degeneration.", "price": "99.99", "available": true }
-    ],
-
-    "services": [
-        { "serviceId": "1", "name": "Internal examination with EKG", "price": "40.00", "type": "Internal" },
-        { "serviceId": "1", "name": "Cardio examination", "price": "50.00", "type": "Internal" },
-        { "serviceId": "1", "name": "Cardio examination + Ultrasound", "price": "100.00", "type": "Internal" },
-        { "serviceId": "1", "name": "4D ultrasound of the heart", "price": "150.00", "type": "Internal" },
-        { "serviceId": "1", "name": "Load testing of the heart", "price": "100.00", "type": "Internal" },
-        { "serviceId": "1", "name": "Ultrasound of the abdomen", "price": "40.00", "type": "Internal" },
-        { "serviceId": "1", "name": "Holter monitoring", "price": "70.00", "type": "Internal" },
-        { "serviceId": "1", "name": "CT coronagraphy", "price": "600.00", "type": "Internal" },
-        { "serviceId": "1", "name": "Invasive coronagraphy", "price": "1500.00", "type": "Internal" },
-        { "serviceId": "1", "name": "Ultrasound thyroid examination", "price": "40.00", "type": "Internal" },
-        { "serviceId": "1", "name": "Thyroid antibodies", "price": "100.00", "type": "Internal" },
-        { "serviceId": "1", "name": "Gastroenterological examination", "price": "70.00", "type": "Gastro" },
-        { "serviceId": "1", "name": "Gastroscopy with local anesthesia", "price": "100.00", "type": "Gastro" },
-        { "serviceId": "1", "name": "Gastroscopy with total anesthesia", "price": "180.00", "type": "Gastro" },
-        { "serviceId": "1", "name": "Rectoscopy", "price": "100.00", "type": "Gastro" },
-        { "serviceId": "1", "name": "Colonoscopy with local anesthesia", "price": "200.00", "type": "Gastro" },
-        { "serviceId": "1", "name": "Colonoscopy with total anesthesia", "price": "300.00", "type": "Gastro" },
-        { "serviceId": "2",  "name": "Classic face treatment", "price": "20.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "30 minute massage", "price": "20.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "60 minute massage", "price": "35.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Sultan massage", "price": "40.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Fruit acids", "price": "60.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Anticelulite treatment", "price": "30.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Pedicure", "price": "20.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Anti age treatment", "price": "40.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Earing depilation", "price": "5.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Leg depilation", "price": "20.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Arm depilation", "price": "10.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Armpit depilation", "price": "10.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Anti aging + 30 minute massage", "price": "60.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Classic face treatment + anticelulite treatment", "price": "50.00", "type": "Cosmetic" },
-        { "serviceId": "2", "name": "Classic face treatment + 60 minute massage", "price": "55.00", "type": "Cosmetic" },
-        { "serviceId": "3", "name": "Driving licence medical credential", "price": "40.00", "type": "Credential" },
-        { "serviceId": "3", "name": "Medical credential for a retail job", "price": "50.00", "type": "Credential" },
-        { "serviceId": "3", "name": "Medical credential for a factory job", "price": "80.00", "type": "Credential" },
-        { "serviceId": "3", "name": "Medical credential for a high altitude job", "price": "100.00", "type": "Credential" },
-        { "serviceId": "3", "name": "Medical credential for special jobs", "price": "120.00", "type": "Credential" },
-        { "serviceId": "3", "name": "Medical credential for school", "price": "10.00", "type": "Credential" },
-        { "serviceId": "3", "name": "Medical credential for kindergarten", "price": "10.00", "type": "Credential" },
-        { "serviceId": "3", "name": "Medical credential for firearm possetion", "price": "80.00", "type": "Credential" },
-        { "serviceId": "4", "name": "Ophthalmological examination", "price": "40.00", "type": "Eye" },
-        { "serviceId": "4", "name": "Control examination", "price": "20.00", "type": "Eye" },
-        { "serviceId": "4", "name": "Examination of the back of the eye", "price": "20.00", "type": "Eye" },
-        { "serviceId": "4", "name": "Schirmer's test", "price": "20.00", "type": "Eye" },
-        { "serviceId": "4", "name": "Daily eye pressure curve measurement", "price": "20.00", "type": "Eye" },
-        { "serviceId": "4", "name": "Tonometry", "price": "10.00", "type": "Eye" },
-        { "serviceId": "4", "name": "Optical coherent tomography", "price": "60.00", "type": "Eye" },
-        { "serviceId": "4", "name": "Angio", "price": "150.00", "type": "Eye" },
-        { "serviceId": "4", "name": "Ultrasound of eye", "price": "40.00", "type": "Eye" },
-        { "serviceId": "4", "name": "Complete ophthalmological examination + eye ultrasound", "price": "60.00", "type": "Eye" },
-        { "serviceId": "4", "name": "Automated field of view", "price": "40.00", "type": "Eye" },
-        { "serviceId": "5", "name": "CT of the Head", "price": "150.00", "type": "CT" },
-        { "serviceId": "5", "name": "CT of the Spine", "price": "150.00", "type": "CT" },
-        { "serviceId": "5", "name": "CT of the Abdomen", "price": "300.00", "type": "CT" },
-        { "serviceId": "5", "name": "CT of the Pelvis", "price": "300.00", "type": "CT" },
-        { "serviceId": "5", "name": "CT of the Torax", "price": "300.00", "type": "CT" },
-        { "serviceId": "5", "name": "Coronography CT", "price": "600.00", "type": "CT" },
-        { "serviceId": "5", "name": "Urography CT", "price": "400.00", "type": "CT" },
-        { "serviceId": "5", "name": "CT of the Neck", "price": "300.00", "type": "CT" },
-        { "serviceId": "5", "name": "Upper extremities CT", "price": "330.00", "type": "CT" },
-        { "serviceId": "5", "name": "Lower extremities CT", "price": "350.00", "type": "CT" },
-        { "serviceId": "5", "name": "CT of the Aorta", "price": "330.00", "type": "CT" },
-        { "serviceId": "5", "name": "CT of the Brain", "price": "500.00", "type": "CT" },
-        { "serviceId": "5", "name": "Head MRI", "price": "350.00", "type": "MRI" },
-        { "serviceId": "5", "name": "Pituitary MRI", "price": "350.00", "type": "MRI" },
-        { "serviceId": "5", "name": "Spine MRI", "price": "350.00", "type": "MRI" },
-        { "serviceId": "5", "name": "Abdomen MRI", "price": "350.00", "type": "MRI" },
-        { "serviceId": "5", "name": "Pelvis MRI", "price": "350.00", "type": "MRI" },
-        { "serviceId": "5", "name": "Joint MRI", "price": "350.00", "type": "MRI" },
-        { "serviceId": "5", "name": "MRI of long bones", "price": "350.00", "type": "MRI" },
-        { "serviceId": "5", "name": "Breast MRI", "price": "400.00", "type": "MRI" },
-        { "serviceId": "5", "name": "Knee MRI", "price": "350.00", "type": "MRI" },
-        { "serviceId": "5", "name": "MRCP", "price": "310.00", "type": "MRI" },
-        { "serviceId": "5", "name": "Neck spine RTG", "price": "50.00", "type": "RTG" },
-        { "serviceId": "5", "name": "Thoracic spine RTG", "price": "50.00", "type": "RTG" },
-        { "serviceId": "5", "name": "Lumbal spine RTG", "price": "50.00", "type": "RTG" },
-        { "serviceId": "5", "name": "Lung RTG", "price": "40.00", "type": "RTG" },
-        { "serviceId": "5", "name": "Head RTG", "price": "50.00", "type": "RTG" },
-        { "serviceId": "5", "name": "Sinus RTG", "price": "40.00", "type": "RTG" },
-        { "serviceId": "5", "name": "Right hand RTG", "price": "40.00", "type": "RTG" },
-        { "serviceId": "5", "name": "Left hand RTG", "price": "40.00", "type": "RTG" },
-        { "serviceId": "5", "name": "Right leg RTG", "price": "40.00", "type": "RTG" },
-        { "serviceId": "5", "name": "Left leg RTG", "price": "40.00", "type": "RTG" },
-        { "serviceId": "5", "name": "Urotract RTG", "price": "50.00", "type": "RTG" },
-        { "serviceId": "5", "name": "Pelvis RTG", "price": "50.00", "type": "RTG" },
-        { "serviceId": "5", "name": "HSG RTG", "price": "300.00", "type": "RTG" },
-        { "serviceId": "6", "name": "Lower eyelid surgery", "price": "2700.00", "type": "HeadPlastic" },
-        { "serviceId": "6", "name": "Upper eyelid surgery", "price": "2700.00", "type": "HeadPlastic" },
-        { "serviceId": "6", "name": "Rhinoplasty", "price": "5000.00", "type": "HeadPlastic" },
-        { "serviceId": "6", "name": "Partial facelift", "price": "4000.00", "type": "HeadPlastic" },
-        { "serviceId": "6", "name": "Complete facelift", "price": "6000.00", "type": "HeadPlastic" },
-        { "serviceId": "6", "name": "Ear surgery", "price": "1000.00", "type": "HeadPlastic" },
-        { "serviceId": "6", "name": "Ear surgery (both)", "price": "1200.00", "type": "HeadPlastic" },
-        { "serviceId": "6", "name": "Eyelid cancer treatment", "price": "1500.00", "type": "HeadPlastic" },
-        { "serviceId": "6", "name": "Xanthelasma treatment", "price": "400.00", "type": "HeadPlastic" },
-        { "serviceId": "6", "name": "Upper eyelid correction", "price": "2200.00", "type": "HeadPlastic" },
-        { "serviceId": "6", "name": "Breast liposuction", "price": "2000.00", "type": "BodyPlastic" },
-        { "serviceId": "6", "name": "Neck lipsuction", "price": "1500.00", "type": "BodyPlastic" },
-        { "serviceId": "6", "name": "Abdominoplastic", "price": "6500.00", "type": "BodyPlastic" },
-        { "serviceId": "6", "name": "Miniabdominoplastic", "price": "2500.00", "type": "BodyPlastic" },
-        { "serviceId": "6", "name": "Stomach liposuction", "price": "3000.00", "type": "BodyPlastic" },
-        { "serviceId": "6", "name": "Hip liposuction", "price": "1500.00", "type": "BodyPlastic" },
-        { "serviceId": "6", "name": "Glutes liposuction", "price": "1500.00", "type": "BodyPlastic" },
-        { "serviceId": "6", "name": "Thigh liposuction", "price": "2500.00", "type": "BodyPlastic" },
-        { "serviceId": "6", "name": "Knee liposuction", "price": "1200.00", "type": "BodyPlastic" },
-        { "serviceId": "6", "name": "Back liposuction", "price": "2000.00", "type": "BodyPlastic" },
-        { "serviceId": "6", "name": "Small skin changes", "price": "300.00", "type": "HandPlastic" },
-        { "serviceId": "6", "name": "PH diagnostic", "price": "250.00", "type": "HandPlastic" },
-        { "serviceId": "6", "name": "Skin reconstruction", "price": "1000.00", "type": "HandPlastic" },
-        { "serviceId": "6", "name": "Surgical scar correction", "price": "500.00", "type": "HandPlastic" },
-        { "serviceId": "6", "name": "Dipitren's contracture", "price": "1200.00", "type": "HandPlastic" },
-        { "serviceId": "6", "name": "Carpal tunnel", "price": "1000.00", "type": "HandPlastic" },
-        { "serviceId": "6", "name": "Grown in nail operation", "price": "200.00", "type": "HandPlastic" },
-        { "serviceId": "6", "name": "Clavus surgery", "price": "300.00", "type": "HandPlastic" },
-        { "serviceId": "6", "name": "Trigger finger", "price": "1000.00", "type": "HandPlastic" },
-        { "serviceId": "6", "name": "Hygroma", "price": "800.00", "type": "HandPlastic" }
-    ],
-
-    "booking": [
-        
-    ]
-  }
+  "members": [
+    {
+      "email": "benjamin.bosnjic@gmail.com",
+      "password": "Benjo1234!"
+    },
+    {
+      "email": "nedim.bosnjic@gmail.com",
+      "password": "Nedim1234!"
+    }
+  ],
+  "cards": [
+    {
+      "id": "1",
+      "imgUrl": "./assets/surgery.jpg",
+      "title": "Internal services",
+      "text": "List of available invasive procedures.",
+      "alt": "Image with surgreons operating"
+    },
+    {
+      "id": "2",
+      "imgUrl": "./assets/manicure.PNG",
+      "title": "Cosmetics",
+      "text": "For all regular cosmetic procedures, check here.",
+      "alt": "Image with hands during a manicure procedure"
+    },
+    {
+      "id": "3",
+      "imgUrl": "./assets/credential.jpg",
+      "title": "Medical credentials",
+      "text": "If you need a credential for something, check here.",
+      "alt": "Image with a medical document"
+    },
+    {
+      "id": "4",
+      "imgUrl": "./assets/ophtamology.jpg",
+      "title": "Ophthalmology services",
+      "text": "If you need to see our available eye procedures, this is the place to go.",
+      "alt": "Image with a patient having their eyes tested"
+    },
+    {
+      "id": "5",
+      "imgUrl": "./assets/ct.JPG",
+      "title": "Radialogy services",
+      "text": "Need more medical info that can not be obtained regulary? Check here.",
+      "alt": "Image with a CT machine in use"
+    },
+    {
+      "id": "6",
+      "imgUrl": "./assets/plastic.PNG",
+      "title": "Plastic surgery",
+      "text": "Listing all of the possible facial restructuring procedures.",
+      "alt": "Image with a patient having their face marked for plastic surgery"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "type": "tooth",
+      "title": "PARADONTAX PASTE CLASSIC",
+      "imageUrl": "./assets/paradontax.JPG",
+      "alt": "Image with a box of toothpaste",
+      "description": "Parodontax Fluoride toothpaste helps stop bleeding gums. <ul> <li>It also contains fluoride that prevents caries, so you can safely use it every day.</li> <li>Ingredients parodontax toothpaste consists of 70% medicinal active ingredients.</li> <li>It contains mineral salts and plant extracts that give it a unique taste.</li> <li>After 14 days of using parodontax toothpaste, most people liked its unique taste.</li></ul> <br> <br> HOW TO USE: Brush your teeth two and no more than three times a day, reduce swallowing the paste to a minimum and spit it out. <br><br> PACKAGING: 75 ml",
+      "price": "11.99",
+      "available": true
+    },
+    {
+      "id": 2,
+      "type": "tooth",
+      "title": "ORAL-B ESSENTIAL DENTAL FLOSS",
+      "imageUrl": "./assets/OralB.JPG",
+      "alt": "Image with a packaged dental floss product",
+      "description": "<ul><li>mint flavored dental floss</li> <li>double-layer thread: strong and pleasant to handle</li> <li>silky texture</li> <li>glides easily, gentle on fingers and gums</li> <li>leaves a feeling of cleanliness and freshness in the mouth</li></ul> Complete your oral hygiene with dental floss. Oral-B Essential Mint dental floss slides easily between the teeth so you can clean even the most difficult places. The thread is strong and easy to handle. It is gentle on both fingers and gums, and leaves a fresh mint taste and a feeling of cleanliness in the mouth.",
+      "price": "3.99",
+      "available": true
+    },
+    {
+      "id": 3,
+      "type": "tooth",
+      "title": "ORAL-B ELECTRIC TOOTHBRUSH",
+      "imageUrl": "./assets/Electric.JPG",
+      "alt": "Image of a packaged electric toothbrush",
+      "description": "The oscillating brush Oral B Vitality 100 CrossAction White Box is suitable in the fight against dental caries and unwanted discoloration of the tooth surface.<br><br> Properties:<ul><li>removes dental caries</li><li>it is compatible with a wide range of brush heads</li><li>signals the optimal time for washing</li></ul>",
+      "price": "47.99",
+      "available": false
+    },
+    {
+      "id": 4,
+      "type": "tooth",
+      "title": "CURAPROX ORTHO KIT PROFFESIONAL",
+      "imageUrl": "./assets/Kit.JPG",
+      "alt": "Image of an orthopedic kit",
+      "description": "Set for orthodontic braces (ORTHO kit - brush set CS 5460 ortho and CS 1006, thread DF 834 and pocket set CPS 457 in a pencil case) <br><br> orthodontic set for everyone who has a fixed orthodontic appliance, which requires even more intensive care for the hygiene of the teeth and tissues around the teeth - above all in the places where the appliance and the surface of the teeth come into contact and under the wires of the appliance.",
+      "price": "49.99",
+      "available": false
+    },
+    {
+      "id": 5,
+      "type": "tooth",
+      "title": "CURAPROX BRUSH 5460 ULTRA SOFT",
+      "imageUrl": "./assets/brushes.JPG",
+      "alt": "Image of a packaged set of toothbrushes",
+      "description": "The brush head with dense ultra-thin CUREN® fibers provides exceptional cleaning power. And it looks great too. <br><br> The worst enemy of dental plaque is the softness of CUREN® fibers:<br><br><ul><li>CS toothbrushes are really extremely gentle.</li><li>The 5460 CUREN® fibers of the CS 5460 brush form an extremely dense and effective cleaning surface.</li></ul>",
+      "price": "10.99",
+      "available": true
+    },
+    {
+      "id": 6,
+      "type": "dermo",
+      "title": "A-DERMA PROTECT INVISIBLE FLUID",
+      "imageUrl": "./assets/invisible.JPG",
+      "alt": "Image of cosmetic tube",
+      "description": "<ul><li>Very high UVB + UVA protection for mixed to oily fragile skin.</li><li>Ultra-fast absorption.</li><li>It does not leave a white mark.</li><li>Instant absorption in 3 seconds</li><li>Waterproof.</li><li>Patented innovative active ingredient: Barriestolide® from Rhealba® oat shoot oil, strengthens and protects the skin barrier.</li></ul>Patented filter system: photostable, protects against UVB/UVA short and long wavelengths.",
+      "price": "33.99",
+      "available": true
+    },
+    {
+      "id": 7,
+      "type": "dermo",
+      "title": "AVENE CLEANSING FOAM 150 ML",
+      "imageUrl": "./assets/foam.JPG",
+      "alt": "Image of a cosmetic spray tube",
+      "description": "<ul><li>Cleansing foam is intended for people with normal to mixed sensitive skin.</li> <li>Soap-free.</li><li>Removes impurities and makeup with carefully selected gentle skin cleansers. </li><li>It is suitable for cleaning both face and eyes.</li></ul>",
+      "price": "30.99",
+      "available": true
+    },
+    {
+      "id": 8,
+      "type": "dermo",
+      "title": "EUCERIN ANTI-PIGMENT NIGHT CREAM 50ml",
+      "imageUrl": "./assets/anti.JPG",
+      "alt": "Image of a cosmetic spray tube and packaging",
+      "description": "It contains an advanced SPF15 plus triple-action complex, expertly formulated to fight skin pigmentation overnight. It fights the visible signs of aging and reduces dark spots and dullness to reveal a more radiant complexion.<ul><li>Night cream with thiamidol</li><li>Effectively reduces dark spots and prevents their reappearance</li><li>It supports skin regeneration during the night</li><li>Regenerating night care for more even, glowing skin</li></ul>",
+      "price": "78.99",
+      "available": false
+    },
+    {
+      "id": 9,
+      "type": "imunity",
+      "title": "SOLGAR CALCIUM MAGNESIUM BORON",
+      "imageUrl": "./assets/boron.jpg",
+      "alt": "Image with a bottle of tablets",
+      "description": "The preparation contains three key nutrients (Calcium, Magnesium, Boron) for the health of bones and teeth<ul><li>for the health of the immune, muscular and nervous systems</li><li>for energy and against fatigue</li></ul>",
+      "price": "27.99",
+      "available": true
+    },
+    {
+      "id": 10,
+      "type": "imunity",
+      "title": "SOLGAR VIT C 500 mg CAPSULES A 100",
+      "imageUrl": "./assets/vitc.JPG",
+      "alt": "Image with a bottle of capsules",
+      "description": "<ul><li>It contributes to the normal function of the immune system</li><li>Strong antioxidant effect<li>Contributes to the reduction of fatigue and exhaustion</li><li>It contributes to the normal formation of collagen for the normal function of blood vessels, bones, cartilage and bones</li></ul><br><br>The product contains vitamin C which<br><br><ul><li>contributes to the normal function of the immune system,</li><li>reducing fatigue and exhaustion,</li><li>normal collagen formation for normal skin function and</li><li>protect cells from oxidative stress.</li></ul>",
+      "price": "39.99",
+      "available": true
+    },
+    {
+      "id": 11,
+      "type": "imunity",
+      "title": "IMMUNACE CAPSULES - CELL PROTECTION",
+      "imageUrl": "./assets/immunace.JPG",
+      "alt": "Image with a box of capsules",
+      "description": "The Immunace formula was developed on the basis of extensive research to support the immune system and long-term protection of cells, and it works in two ways:<br><br><ul><li>short-term - helps the body defend against infections and compensate for vitamin C, which is consumed more during a cold</li><li>long-term - increases the level of resistance of the organism and provides effective protection of cells.</li></ul>",
+      "price": "24.99",
+      "available": true
+    },
+    {
+      "id": 12,
+      "type": "imunity",
+      "title": "ORTHOMOL IMMUN A30 BAGS",
+      "imageUrl": "./assets/immun.JPG",
+      "alt": "Image with a blue box of medicine",
+      "description": "Orthomol Immun is a dietary product for special medical use (balanced diet). <br><br><ul><li>It contains micronutrients in a complex composition and with a well-balanced, scientifically based dosage.</li><li>Orthomol Immun is used for the treatment of nutritionally conditioned immune deficits, related to diet, which you may encounter, for example, after chemotherapy and radiation.</li><li>Orthomol Immun is intended for people with a weakened immune system, for example after chemotherapy and radiation, in elderly people, in cases of acute and chronic infections and diseases, after surgery.</li></ul>",
+      "price": "125.99",
+      "available": true
+    },
+    {
+      "id": 13,
+      "type": "eye",
+      "title": "ORTHOMOL VISION A30 120 CPS",
+      "imageUrl": "./assets/vision.JPG",
+      "alt": "Image with a blue box of medicine",
+      "description": "Orthomol® Vision is a dietary supplement, important micronutrients for the eyes.<br><br><ul><li>With vitamin A, vitamin B2 (riboflavin), zinc, omega and omega-3 fatty acids (DHA) to maintain normal vision.</li><li>With lutein and zeaxanthin.</li><li>Orthomol® Vision does not contain gluten or lactose</li><li>The recommended dose should not be exceeded.</li><li>A dietary supplement is not a substitute for a varied, balanced diet and a healthy lifestyle.</li></ul>",
+      "price": "88.99",
+      "available": true
+    },
+    {
+      "id": 14,
+      "type": "eye",
+      "title": "ORTHOMOL AMD EXTRA 120 CPS",
+      "imageUrl": "./assets/extra.JPG",
+      "alt": "Image with a blue box of medicine",
+      "description": "Orthomol® AMD Extra is intended for the dietary treatment of advanced age-related macular degeneration. <br><br>What is Orthomol® AMD extra?<br><br>Orthomol® AMD extra is a dietary product with a special medical purpose. Orthomol® AMD extra is intended for the dietary treatment of advanced age-related macular degeneration.",
+      "price": "99.99",
+      "available": true
+    }
+  ],
+  "services": [
+    {
+      "serviceId": "1",
+      "name": "Internal examination with EKG",
+      "price": "40.00",
+      "type": "Internal"
+    },
+    {
+      "serviceId": "1",
+      "name": "Cardio examination",
+      "price": "50.00",
+      "type": "Internal"
+    },
+    {
+      "serviceId": "1",
+      "name": "Cardio examination + Ultrasound",
+      "price": "100.00",
+      "type": "Internal"
+    },
+    {
+      "serviceId": "1",
+      "name": "4D ultrasound of the heart",
+      "price": "150.00",
+      "type": "Internal"
+    },
+    {
+      "serviceId": "1",
+      "name": "Load testing of the heart",
+      "price": "100.00",
+      "type": "Internal"
+    },
+    {
+      "serviceId": "1",
+      "name": "Ultrasound of the abdomen",
+      "price": "40.00",
+      "type": "Internal"
+    },
+    {
+      "serviceId": "1",
+      "name": "Holter monitoring",
+      "price": "70.00",
+      "type": "Internal"
+    },
+    {
+      "serviceId": "1",
+      "name": "CT coronagraphy",
+      "price": "600.00",
+      "type": "Internal"
+    },
+    {
+      "serviceId": "1",
+      "name": "Invasive coronagraphy",
+      "price": "1500.00",
+      "type": "Internal"
+    },
+    {
+      "serviceId": "1",
+      "name": "Ultrasound thyroid examination",
+      "price": "40.00",
+      "type": "Internal"
+    },
+    {
+      "serviceId": "1",
+      "name": "Thyroid antibodies",
+      "price": "100.00",
+      "type": "Internal"
+    },
+    {
+      "serviceId": "1",
+      "name": "Gastroenterological examination",
+      "price": "70.00",
+      "type": "Gastro"
+    },
+    {
+      "serviceId": "1",
+      "name": "Gastroscopy with local anesthesia",
+      "price": "100.00",
+      "type": "Gastro"
+    },
+    {
+      "serviceId": "1",
+      "name": "Gastroscopy with total anesthesia",
+      "price": "180.00",
+      "type": "Gastro"
+    },
+    {
+      "serviceId": "1",
+      "name": "Rectoscopy",
+      "price": "100.00",
+      "type": "Gastro"
+    },
+    {
+      "serviceId": "1",
+      "name": "Colonoscopy with local anesthesia",
+      "price": "200.00",
+      "type": "Gastro"
+    },
+    {
+      "serviceId": "1",
+      "name": "Colonoscopy with total anesthesia",
+      "price": "300.00",
+      "type": "Gastro"
+    },
+    {
+      "serviceId": "2",
+      "name": "Classic face treatment",
+      "price": "20.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "30 minute massage",
+      "price": "20.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "60 minute massage",
+      "price": "35.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Sultan massage",
+      "price": "40.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Fruit acids",
+      "price": "60.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Anticelulite treatment",
+      "price": "30.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Pedicure",
+      "price": "20.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Anti age treatment",
+      "price": "40.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Earing depilation",
+      "price": "5.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Leg depilation",
+      "price": "20.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Arm depilation",
+      "price": "10.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Armpit depilation",
+      "price": "10.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Anti aging + 30 minute massage",
+      "price": "60.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Classic face treatment + anticelulite treatment",
+      "price": "50.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "2",
+      "name": "Classic face treatment + 60 minute massage",
+      "price": "55.00",
+      "type": "Cosmetic"
+    },
+    {
+      "serviceId": "3",
+      "name": "Driving licence medical credential",
+      "price": "40.00",
+      "type": "Credential"
+    },
+    {
+      "serviceId": "3",
+      "name": "Medical credential for a retail job",
+      "price": "50.00",
+      "type": "Credential"
+    },
+    {
+      "serviceId": "3",
+      "name": "Medical credential for a factory job",
+      "price": "80.00",
+      "type": "Credential"
+    },
+    {
+      "serviceId": "3",
+      "name": "Medical credential for a high altitude job",
+      "price": "100.00",
+      "type": "Credential"
+    },
+    {
+      "serviceId": "3",
+      "name": "Medical credential for special jobs",
+      "price": "120.00",
+      "type": "Credential"
+    },
+    {
+      "serviceId": "3",
+      "name": "Medical credential for school",
+      "price": "10.00",
+      "type": "Credential"
+    },
+    {
+      "serviceId": "3",
+      "name": "Medical credential for kindergarten",
+      "price": "10.00",
+      "type": "Credential"
+    },
+    {
+      "serviceId": "3",
+      "name": "Medical credential for firearm possetion",
+      "price": "80.00",
+      "type": "Credential"
+    },
+    {
+      "serviceId": "4",
+      "name": "Ophthalmological examination",
+      "price": "40.00",
+      "type": "Eye"
+    },
+    {
+      "serviceId": "4",
+      "name": "Control examination",
+      "price": "20.00",
+      "type": "Eye"
+    },
+    {
+      "serviceId": "4",
+      "name": "Examination of the back of the eye",
+      "price": "20.00",
+      "type": "Eye"
+    },
+    {
+      "serviceId": "4",
+      "name": "Schirmer's test",
+      "price": "20.00",
+      "type": "Eye"
+    },
+    {
+      "serviceId": "4",
+      "name": "Daily eye pressure curve measurement",
+      "price": "20.00",
+      "type": "Eye"
+    },
+    {
+      "serviceId": "4",
+      "name": "Tonometry",
+      "price": "10.00",
+      "type": "Eye"
+    },
+    {
+      "serviceId": "4",
+      "name": "Optical coherent tomography",
+      "price": "60.00",
+      "type": "Eye"
+    },
+    {
+      "serviceId": "4",
+      "name": "Angio",
+      "price": "150.00",
+      "type": "Eye"
+    },
+    {
+      "serviceId": "4",
+      "name": "Ultrasound of eye",
+      "price": "40.00",
+      "type": "Eye"
+    },
+    {
+      "serviceId": "4",
+      "name": "Complete ophthalmological examination + eye ultrasound",
+      "price": "60.00",
+      "type": "Eye"
+    },
+    {
+      "serviceId": "4",
+      "name": "Automated field of view",
+      "price": "40.00",
+      "type": "Eye"
+    },
+    {
+      "serviceId": "5",
+      "name": "CT of the Head",
+      "price": "150.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "CT of the Spine",
+      "price": "150.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "CT of the Abdomen",
+      "price": "300.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "CT of the Pelvis",
+      "price": "300.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "CT of the Torax",
+      "price": "300.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "Coronography CT",
+      "price": "600.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "Urography CT",
+      "price": "400.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "CT of the Neck",
+      "price": "300.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "Upper extremities CT",
+      "price": "330.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "Lower extremities CT",
+      "price": "350.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "CT of the Aorta",
+      "price": "330.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "CT of the Brain",
+      "price": "500.00",
+      "type": "CT"
+    },
+    {
+      "serviceId": "5",
+      "name": "Head MRI",
+      "price": "350.00",
+      "type": "MRI"
+    },
+    {
+      "serviceId": "5",
+      "name": "Pituitary MRI",
+      "price": "350.00",
+      "type": "MRI"
+    },
+    {
+      "serviceId": "5",
+      "name": "Spine MRI",
+      "price": "350.00",
+      "type": "MRI"
+    },
+    {
+      "serviceId": "5",
+      "name": "Abdomen MRI",
+      "price": "350.00",
+      "type": "MRI"
+    },
+    {
+      "serviceId": "5",
+      "name": "Pelvis MRI",
+      "price": "350.00",
+      "type": "MRI"
+    },
+    {
+      "serviceId": "5",
+      "name": "Joint MRI",
+      "price": "350.00",
+      "type": "MRI"
+    },
+    {
+      "serviceId": "5",
+      "name": "MRI of long bones",
+      "price": "350.00",
+      "type": "MRI"
+    },
+    {
+      "serviceId": "5",
+      "name": "Breast MRI",
+      "price": "400.00",
+      "type": "MRI"
+    },
+    {
+      "serviceId": "5",
+      "name": "Knee MRI",
+      "price": "350.00",
+      "type": "MRI"
+    },
+    {
+      "serviceId": "5",
+      "name": "MRCP",
+      "price": "310.00",
+      "type": "MRI"
+    },
+    {
+      "serviceId": "5",
+      "name": "Neck spine RTG",
+      "price": "50.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "Thoracic spine RTG",
+      "price": "50.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "Lumbal spine RTG",
+      "price": "50.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "Lung RTG",
+      "price": "40.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "Head RTG",
+      "price": "50.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "Sinus RTG",
+      "price": "40.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "Right hand RTG",
+      "price": "40.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "Left hand RTG",
+      "price": "40.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "Right leg RTG",
+      "price": "40.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "Left leg RTG",
+      "price": "40.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "Urotract RTG",
+      "price": "50.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "Pelvis RTG",
+      "price": "50.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "5",
+      "name": "HSG RTG",
+      "price": "300.00",
+      "type": "RTG"
+    },
+    {
+      "serviceId": "6",
+      "name": "Lower eyelid surgery",
+      "price": "2700.00",
+      "type": "HeadPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Upper eyelid surgery",
+      "price": "2700.00",
+      "type": "HeadPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Rhinoplasty",
+      "price": "5000.00",
+      "type": "HeadPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Partial facelift",
+      "price": "4000.00",
+      "type": "HeadPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Complete facelift",
+      "price": "6000.00",
+      "type": "HeadPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Ear surgery",
+      "price": "1000.00",
+      "type": "HeadPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Ear surgery (both)",
+      "price": "1200.00",
+      "type": "HeadPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Eyelid cancer treatment",
+      "price": "1500.00",
+      "type": "HeadPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Xanthelasma treatment",
+      "price": "400.00",
+      "type": "HeadPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Upper eyelid correction",
+      "price": "2200.00",
+      "type": "HeadPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Breast liposuction",
+      "price": "2000.00",
+      "type": "BodyPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Neck lipsuction",
+      "price": "1500.00",
+      "type": "BodyPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Abdominoplastic",
+      "price": "6500.00",
+      "type": "BodyPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Miniabdominoplastic",
+      "price": "2500.00",
+      "type": "BodyPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Stomach liposuction",
+      "price": "3000.00",
+      "type": "BodyPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Hip liposuction",
+      "price": "1500.00",
+      "type": "BodyPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Glutes liposuction",
+      "price": "1500.00",
+      "type": "BodyPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Thigh liposuction",
+      "price": "2500.00",
+      "type": "BodyPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Knee liposuction",
+      "price": "1200.00",
+      "type": "BodyPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Back liposuction",
+      "price": "2000.00",
+      "type": "BodyPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Small skin changes",
+      "price": "300.00",
+      "type": "HandPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "PH diagnostic",
+      "price": "250.00",
+      "type": "HandPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Skin reconstruction",
+      "price": "1000.00",
+      "type": "HandPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Surgical scar correction",
+      "price": "500.00",
+      "type": "HandPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Dipitren's contracture",
+      "price": "1200.00",
+      "type": "HandPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Carpal tunnel",
+      "price": "1000.00",
+      "type": "HandPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Grown in nail operation",
+      "price": "200.00",
+      "type": "HandPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Clavus surgery",
+      "price": "300.00",
+      "type": "HandPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Trigger finger",
+      "price": "1000.00",
+      "type": "HandPlastic"
+    },
+    {
+      "serviceId": "6",
+      "name": "Hygroma",
+      "price": "800.00",
+      "type": "HandPlastic"
+    }
+  ],
+  "booking": [
+    {
+      "firstName": "",
+      "lastName": "",
+      "address": "",
+      "email": "",
+      "phone": "",
+      "date": "",
+      "startTime": "",
+      "endTime": "",
+      "additionalInfo": "",
+      "id": 1
+    }
+  ]
+}
