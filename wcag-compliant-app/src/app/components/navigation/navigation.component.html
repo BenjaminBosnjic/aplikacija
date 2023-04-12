@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a routerLink="/home"><img src="assets/Logo.png" class="banner" alt="Lorem Ipsum banner"></a>
+    <a routerLink="/home"><img src="assets/Logo.png" class="banner" alt="Lorem Ipsum banner" aria-label="Company logo home button"></a>
     <div class="container-fluid">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,26 +8,26 @@
       <div class="collapse nav-tabs navbar-collapse navbar-font-larger" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+            <a class="nav-link" routerLink="/home" routerLinkActive="active" aria-label="Navigate to home page">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/employment" routerLinkActive="active">Employment</a>
+            <a class="nav-link" routerLink="/employment" routerLinkActive="active" aria-label="Navigate to employment page">Employment</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/price-list" routerLinkActive="active">Price List</a>
+            <a class="nav-link" routerLink="/price-list" routerLinkActive="active" aria-label="Navigate to services page">Price List</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/catalogue" routerLinkActive="active">Catalogue</a>
+            <a class="nav-link" routerLink="/catalogue" routerLinkActive="active" aria-label="Navigate to catalogue">Catalogue</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/about-us" routerLinkActive="active">About us</a>
+            <a class="nav-link" routerLink="/about-us" routerLinkActive="active" aria-label="Navigate to about us page">About us</a>
           </li>
         </ul>
       </div>
       <button class="btn btn-warning check-up" routerLink="/booking" type="submit"><b>BOOK A CHECK-UP</b></button>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search 
+        <button class="btn btn-outline-success" type="submit" aria-label="Search button">Search 
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
           </svg>

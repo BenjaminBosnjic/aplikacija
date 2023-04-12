@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BsModalService, ModalModule } from 'ngx-bootstrap/modal'
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +26,9 @@ import { PricesComponent } from './components/prices/prices.component';
 import { ItemInfoComponent } from './components/item-info/item-info.component';
 import { CatalogueItemComponent } from './components/catalogue-item/catalogue-item.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { BookingService } from './services/booking.service';
+import { BookingSuccessComponent } from './components/booking-success/booking-success.component';
+import { SearchResultsComponent } from './components/search-results/search-results.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     LoginComponent,
     PricesComponent,
     ItemInfoComponent,
-    CatalogueItemComponent
+    CatalogueItemComponent,
+    BookingSuccessComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +55,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     HttpClientModule,
     NoopAnimationsModule,
     MatMenuModule,
+    FormsModule,
     ReactiveFormsModule,
     ModalModule,
     MatDialogModule
@@ -58,6 +64,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     LoginService,
     CatalogueService,
     PriceListService,
+    BookingService,
     BsModalService
   ],
   bootstrap: [AppComponent]

@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { PriceListComponent } from './components/price-list/price-list.component';
 import { EmploymentComponent } from './components/employment/employment.component';
 import { PricesComponent } from './components/prices/prices.component';
+import { BookingSuccessComponent } from './components/booking-success/booking-success.component';
 
 const routes: Routes = [
   { path: 'home', component: HomepageComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'employment', component: EmploymentComponent },
   { path: 'catalogue', component: CatalogueComponent },
   { path: 'booking', component: BookingComponent },
+  { path: 'booking-success', component: BookingSuccessComponent },
   { path: 'login', component: LoginComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];

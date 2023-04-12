@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { BookingService } from 'src/app/services/booking.service';
 
 @Component({
   selector: 'app-booking',
@@ -7,9 +10,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookingComponent implements OnInit {
 
-  constructor() { }
+  saving = false;
+
+  constructor(
+    private fb: FormBuilder,
+    private bookingService: BookingService,
+    private router: Router
+    ) { }
+
+  bookingForm = this.fb.group({
+    firstName: [''],
+    lastName: [''],
+    address: [''],
+    email: [''],
+    phone: [''],
+    date: [''],
+    startTime: [''],
+    endTime: [''],
+    additionalInfo: ['']
+  });
 
   ngOnInit(): void {
+  }
+
+  saveBooking(event: any) {
+    this.saving = true;
+    event.preventDefault();
+    this.bookingService.book(this.bookingForm.value).subscribe(response => {
+      this.saving = false;
+      this.router.navigateByUrl('/booking-success')
+    }, (error) => {
+      console.log(error);
+      this.saving = false;
+    })
   }
 
 }
