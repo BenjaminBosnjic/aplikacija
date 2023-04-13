@@ -9,6 +9,7 @@ import { PriceListComponent } from './components/price-list/price-list.component
 import { EmploymentComponent } from './components/employment/employment.component';
 import { PricesComponent } from './components/prices/prices.component';
 import { BookingSuccessComponent } from './components/booking-success/booking-success.component';
+import { SearchResultsComponent } from './components/search-results/search-results.component';
 
 const routes: Routes = [
   { path: 'home', component: HomepageComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'catalogue', component: CatalogueComponent },
   { path: 'booking', component: BookingComponent },
   { path: 'booking-success', component: BookingSuccessComponent },
+  { path: 'search-results', component: SearchResultsComponent },
   { path: 'login', component: LoginComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];

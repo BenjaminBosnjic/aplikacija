@@ -1,15 +1,15 @@
-<div class="item-modal">
+<div class="item-modal" role="dialog">
   <div class="item-header">
-    <h1 mat-dialog-title>Item details</h1>
+    <h1 role="heading" aria-level="1" mat-dialog-title>Item details</h1>
     <button (click)="close()" type="button" class="btn-close upped" aria-label="Close"></button>
   </div>  
   <div mat-dialog-content>
-    <div class="item-content">
+    <div class="item-content item-for-tablet">
       <div class="img-box">
-        <img [src]="item.imageUrl" alt="item.alt">
+        <img [src]="item.imageUrl" [alt]="item.alt">
       </div>
       <div class="item-description">
-        <h2>{{ item.title }}</h2>
+        <h2 role="heading" aria-level="2">{{ item.title }}</h2>
         <p [innerHTML]="item.description"></p>
     </div>
     </div>

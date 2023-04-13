@@ -1,39 +1,43 @@
-<h1 class="text-center">Catalogue</h1><hr>
+<div role="main">
+    <h1 role="heading" aria-level="1" class="text-center">Catalogue</h1><hr>
 
-<div class="container radio-container">
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio0" value="option0" (click)="filterItems('all')" checked >
-        <label class="form-check-label radio-label" for="inlineRadio0">All products</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" (click)="filterItems('tooth')">
-        <label class="form-check-label radio-label" for="inlineRadio1">Tooth care</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" (click)="filterItems('dermo')">
-        <label class="form-check-label radio-label" for="inlineRadio2">Dermocosmetics</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" (click)="filterItems('imunity')">
-        <label class="form-check-label radio-label" for="inlineRadio3">Imunity</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" (click)="filterItems('eye')">
-        <label class="form-check-label radio-label" for="inlineRadio4">Eye care</label>
-    </div>
-</div>
+    <P style="margin-bottom: 50px;">To filter the items by their group, use the radio buttons provided below. If you want to see more information about a product, click the square View Details button that is present for each product.</P>
 
-<div class="item-container">
-    <div *ngFor="let item of displayItems">
-        <div class="thumb-wrapper">
-            <div class="img-box">
-                <img [src]="item.imageUrl" alt="item.alt">									
+    <div role="radiogroup" aria-label="Radio button group" class="container radio-container">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio0" value="option0" (click)="filterItems('all')" checked >
+            <label class="form-check-label radio-label" for="inlineRadio0">All products</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" (click)="filterItems('tooth')">
+            <label class="form-check-label radio-label" for="inlineRadio1">Tooth care</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" (click)="filterItems('dermo')">
+            <label class="form-check-label radio-label" for="inlineRadio2">Dermocosmetics</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" (click)="filterItems('imunity')">
+            <label class="form-check-label radio-label" for="inlineRadio3">Imunity</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" (click)="filterItems('eye')">
+            <label class="form-check-label radio-label" for="inlineRadio4">Eye care</label>
+        </div>
+    </div>
+
+    <div class="item-container">
+        <div *ngFor="let item of displayItems">
+            <div class="thumb-wrapper">
+                <div class="img-box">
+                    <img [src]="item.imageUrl" [alt]="item.alt">									
+                </div>
+                <div class="thumb-content">
+                    <h4 role="heading" aria-level="4">{{ item.title }}</h4>
+                    <p><b>$ {{ item.price }}</b></p>
+                    <button (click)="openDialog(item)" class="btn btn-primary">View Details</button>
+                </div>						
             </div>
-            <div class="thumb-content">
-                <h4>{{ item.title }}</h4>
-                <p><b>$ {{ item.price }}</b></p>
-                <button (click)="openDialog(item)" class="btn btn-primary">View Details</button>
-            </div>						
         </div>
     </div>
 </div>

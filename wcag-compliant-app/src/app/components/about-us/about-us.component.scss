@@ -1,12 +1,13 @@
 .picturized {
     background-image: url('../../../assets/building.jpg');
     background-size: cover;
-    height: 500px;
+    height: 600px;
     margin-bottom: 50px;
     padding: 30px;
 
     .about-us-box {
-        height: 200px;
+        min-height: 250px;
+        max-height: 550px;
         background-color: aliceblue;
         padding: 30px;
 
@@ -16,7 +17,7 @@
         }
         
         .intro-text {
-            font-size: 25px;
+            font-size: 18px;
             line-height: 30px;
         }
     }
@@ -60,3 +61,22 @@
 .mission-x {
     width: 25%;
 }
+
+.darker {
+    color: #002483 !important;
+}
+
+@media only screen and (max-width: 1199px) {
+    .decorative-img {
+        display: none !important;
+    }
+  }
+
+  @media only screen and (max-width: 765px) {
+    .wrap-icons {
+        flex-wrap: wrap;
+    }
+    .tablet-icons {
+        flex: 50%;
+    }
+  }

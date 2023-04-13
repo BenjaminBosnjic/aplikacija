@@ -7,7 +7,8 @@
     padding: 30px;
 
     .intro-box {
-        height: 250px;
+        min-height: 250px;
+        max-height: 700px;
         background-color: aliceblue;
         opacity: 0.90;
         padding: 30px;
@@ -26,7 +27,7 @@
         }
         .check-up {
             width: 100%;
-            height: 50px;
+            height: 80px;
         }
     }
 }
@@ -70,3 +71,9 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 1199px) {
+    .decorative-img {
+        display: none !important;
+    }
+  }

@@ -15,3 +15,47 @@
     padding-left:15px;
     padding-right:15px;
 }
+
+@media only screen and (max-width: 1499px) {
+    .search-bar-first {
+        display: none !important;
+    }
+    .search-bar-second {
+        display: flex !important;
+        margin-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+  }
+
+@media only screen and (min-width: 1500px) {
+    .search-bar-first {
+        display: flex !important;
+    }
+    .search-bar-second {
+         display: none !important;
+    }
+  }
+
+  @media only screen and (max-width: 1299px) {
+    .booking-button-first {
+        display: none !important;
+    }
+    .booking-button-second {
+        display: table-cell;
+        vertical-align: middle;
+        justify-content: center;
+        margin:30px;
+        width: 95%;
+        height: 100px;
+    }
+  }
+
+@media only screen and (min-width: 1300px) {
+    .booking-button-first {
+        display: flex !important;
+    }
+    .booking-button-second {
+         display: none !important;
+    }
+  }

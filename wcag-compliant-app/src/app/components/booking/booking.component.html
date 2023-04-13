@@ -1,16 +1,18 @@
-<h1 class="text-center">Book a Check-Up</h1><hr><br><br>
+<h1 role="heading" aria-level="1" class="text-center">Book a Check-Up</h1><hr><br><br>
 
-<form [formGroup]="bookingForm">
+<P style="margin-bottom: 50px;">After inputing all of the neccessary data, click the square SUBMIT button at the end to send the information about your booked check up.</P>
+
+<form [formGroup]="bookingForm" role="form">
     <div class="row mb-4">
       <div class="col">
         <div class="form-outline">
-          <label class="form-label" for="firstName"><b>First name</b></label>
+          <label class="form-label" for="firstName"><b>First name (required)</b></label>
           <input type="text" id="firstName" class="form-control" formControlName="firstName" />
         </div>
       </div>
       <div class="col">
         <div class="form-outline">
-          <label class="form-label" for="lastName"><b>Last name</b></label>
+          <label class="form-label" for="lastName"><b>Last name (required)</b></label>
           <input type="text" id="lastName" class="form-control" formControlName="lastName" />
         </div>
       </div>
@@ -22,7 +24,7 @@
     </div>
   
     <div class="form-outline mb-4">
-      <label class="form-label" for="email2"><b>Email</b></label>
+      <label class="form-label" for="email2"><b>Email (required)</b></label>
       <input type="email" id="email2" class="form-control" formControlName="email" />
     </div>
   
@@ -32,17 +34,17 @@
     </div>
 
     <div class="form-outline mb-4">
-      <label class="form-label" for="date"><b>Date</b></label>
+      <label class="form-label" for="date"><b>Date (required)</b></label>
       <input id="date" class="form-control" type="date" formControlName="date" />
     </div>
 
     <div class="form-outline mb-4">
-      <label class="form-label" for="startTime"><b>Start time</b></label>
+      <label class="form-label" for="startTime"><b>Start time (required)</b></label>
       <input id="startTime" type="time" class="form-control" formControlName="startTime" />
     </div>
 
     <div class="form-outline mb-4">
-      <label class="form-label" for="endTime"><b>End time</b></label>
+      <label class="form-label" for="endTime"><b>End time (required)</b></label>
       <input id="endTime" type="time" class="form-control" formControlName="endTime" />
     </div>
 
