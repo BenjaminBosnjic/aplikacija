@@ -29,6 +29,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { BookingService } from './services/booking.service';
 import { BookingSuccessComponent } from './components/booking-success/booking-success.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
+import { SearchService } from './services/search.service';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { SearchResultsComponent } from './components/search-results/search-resul
     CatalogueService,
     PriceListService,
     BookingService,
-    BsModalService
+    BsModalService,
+    SearchService
   ],
   bootstrap: [AppComponent]
 })

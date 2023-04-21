@@ -1,0 +1,13 @@
+.search-results {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+}
+
+.search-container {
+    height: 800px;
+}

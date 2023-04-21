@@ -15,42 +15,54 @@
       "imgUrl": "./assets/surgery.jpg",
       "title": "Internal services",
       "text": "List of available invasive procedures.",
-      "alt": "Image with surgreons operating"
+      "alt": "Image with surgreons operating",
+      "tags": ["internal", "surgery", "ultrasound", "coronagraphy", "astroscopy"],
+      "url": "/prices/1"
     },
     {
       "id": "2",
       "imgUrl": "./assets/manicure.PNG",
       "title": "Cosmetics",
       "text": "For all regular cosmetic procedures, check here.",
-      "alt": "Image with hands during a manicure procedure"
+      "alt": "Image with hands during a manicure procedure",
+      "tags": ["cosmetics", "massage", "pedicure", "depilation"],
+      "url": "/prices/2"
     },
     {
       "id": "3",
       "imgUrl": "./assets/credential.jpg",
       "title": "Medical credentials",
       "text": "If you need a credential for something, check here.",
-      "alt": "Image with a medical document"
+      "alt": "Image with a medical document",
+      "tags": ["credential"],
+      "url": "/prices/3"
     },
     {
       "id": "4",
       "imgUrl": "./assets/ophtamology.jpg",
       "title": "Ophthalmology services",
       "text": "If you need to see our available eye procedures, this is the place to go.",
-      "alt": "Image with a patient having their eyes tested"
+      "alt": "Image with a patient having their eyes tested",
+      "tags": ["ophtamology", "tonometry", "angio", "ultrasound"],
+      "url": "/prices/4"
     },
     {
       "id": "5",
       "imgUrl": "./assets/ct.JPG",
       "title": "Radialogy services",
       "text": "Need more medical info that can not be obtained regulary? Check here.",
-      "alt": "Image with a CT machine in use"
+      "alt": "Image with a CT machine in use",
+      "tags": ["radiology", "ct", "mri", "coronagraphy", "rtg"],
+      "url": "/prices/5"
     },
     {
       "id": "6",
       "imgUrl": "./assets/plastic.PNG",
       "title": "Plastic surgery",
       "text": "Listing all of the possible facial restructuring procedures.",
-      "alt": "Image with a patient having their face marked for plastic surgery"
+      "alt": "Image with a patient having their face marked for plastic surgery",
+      "tags": ["plastic", "surgery", "liposuction", "rhinoplasty", "correction"],
+      "url": "/prices/6"
     }
   ],
   "items": [
@@ -60,7 +72,7 @@
       "title": "PARADONTAX PASTE CLASSIC",
       "imageUrl": "./assets/paradontax.JPG",
       "alt": "Image with a box of toothpaste",
-      "description": "Parodontax Fluoride toothpaste helps stop bleeding gums. <ul> <li>It also contains fluoride that prevents caries, so you can safely use it every day.</li> <li>Ingredients parodontax toothpaste consists of 70% medicinal active ingredients.</li> <li>It contains mineral salts and plant extracts that give it a unique taste.</li> <li>After 14 days of using parodontax toothpaste, most people liked its unique taste.</li></ul> <br> <br> HOW TO USE: Brush your teeth two and no more than three times a day, reduce swallowing the paste to a minimum and spit it out. <br><br> PACKAGING: 75 ml",
+      "description": "Parodontax Fluoride toothpaste helps stop bleeding gums. <ul> <li>It also contains fluoride that prevents caries, so you can safely use it every day.</li> <li>Ingredients parodontax toothpaste consists of 70% medicinal active ingredients.</li> <li>It contains mineral salts and plant extracts that give it a unique taste.</li> <li>After 14 days of using parodontax toothpaste, most people liked its unique taste.</li></ul> <br aria-hidden=\"true\"> <br aria-hidden=\"true\"> HOW TO USE: Brush your teeth two and no more than three times a day, reduce swallowing the paste to a minimum and spit it out. <br aria-hidden=\"true\"><br aria-hidden=\"true\"> PACKAGING: 75 ml",
       "price": "11.99",
       "available": true
     },
@@ -80,7 +92,7 @@
       "title": "ORAL-B ELECTRIC TOOTHBRUSH",
       "imageUrl": "./assets/Electric.JPG",
       "alt": "Image of a packaged electric toothbrush",
-      "description": "The oscillating brush Oral B Vitality 100 CrossAction White Box is suitable in the fight against dental caries and unwanted discoloration of the tooth surface.<br><br> Properties:<ul><li>removes dental caries</li><li>it is compatible with a wide range of brush heads</li><li>signals the optimal time for washing</li></ul>",
+      "description": "The oscillating brush Oral B Vitality 100 CrossAction White Box is suitable in the fight against dental caries and unwanted discoloration of the tooth surface.<br aria-hidden=\"true\"><br aria-hidden=\"true\"> Properties:<ul><li>removes dental caries</li><li>it is compatible with a wide range of brush heads</li><li>signals the optimal time for washing</li></ul>",
       "price": "47.99",
       "available": false
     },
@@ -90,7 +102,7 @@
       "title": "CURAPROX ORTHO KIT PROFFESIONAL",
       "imageUrl": "./assets/Kit.JPG",
       "alt": "Image of an orthopedic kit",
-      "description": "Set for orthodontic braces (ORTHO kit - brush set CS 5460 ortho and CS 1006, thread DF 834 and pocket set CPS 457 in a pencil case) <br><br> orthodontic set for everyone who has a fixed orthodontic appliance, which requires even more intensive care for the hygiene of the teeth and tissues around the teeth - above all in the places where the appliance and the surface of the teeth come into contact and under the wires of the appliance.",
+      "description": "Set for orthodontic braces (ORTHO kit - brush set CS 5460 ortho and CS 1006, thread DF 834 and pocket set CPS 457 in a pencil case) <br aria-hidden=\"true\"><br aria-hidden=\"true\"> orthodontic set for everyone who has a fixed orthodontic appliance, which requires even more intensive care for the hygiene of the teeth and tissues around the teeth - above all in the places where the appliance and the surface of the teeth come into contact and under the wires of the appliance.",
       "price": "49.99",
       "available": false
     },
@@ -100,7 +112,7 @@
       "title": "CURAPROX BRUSH 5460 ULTRA SOFT",
       "imageUrl": "./assets/brushes.JPG",
       "alt": "Image of a packaged set of toothbrushes",
-      "description": "The brush head with dense ultra-thin CUREN® fibers provides exceptional cleaning power. And it looks great too. <br><br> The worst enemy of dental plaque is the softness of CUREN® fibers:<br><br><ul><li>CS toothbrushes are really extremely gentle.</li><li>The 5460 CUREN® fibers of the CS 5460 brush form an extremely dense and effective cleaning surface.</li></ul>",
+      "description": "The brush head with dense ultra-thin CUREN® fibers provides exceptional cleaning power. And it looks great too. <br aria-hidden=\"true\"><br aria-hidden=\"true\"> The worst enemy of dental plaque is the softness of CUREN® fibers:<br aria-hidden=\"true\"><br aria-hidden=\"true\"><ul><li>CS toothbrushes are really extremely gentle.</li><li>The 5460 CUREN® fibers of the CS 5460 brush form an extremely dense and effective cleaning surface.</li></ul>",
       "price": "10.99",
       "available": true
     },
@@ -150,7 +162,7 @@
       "title": "SOLGAR VIT C 500 mg CAPSULES A 100",
       "imageUrl": "./assets/vitc.JPG",
       "alt": "Image with a bottle of capsules",
-      "description": "<ul><li>It contributes to the normal function of the immune system</li><li>Strong antioxidant effect<li>Contributes to the reduction of fatigue and exhaustion</li><li>It contributes to the normal formation of collagen for the normal function of blood vessels, bones, cartilage and bones</li></ul><br><br>The product contains vitamin C which<br><br><ul><li>contributes to the normal function of the immune system,</li><li>reducing fatigue and exhaustion,</li><li>normal collagen formation for normal skin function and</li><li>protect cells from oxidative stress.</li></ul>",
+      "description": "<ul><li>It contributes to the normal function of the immune system</li><li>Strong antioxidant effect<li>Contributes to the reduction of fatigue and exhaustion</li><li>It contributes to the normal formation of collagen for the normal function of blood vessels, bones, cartilage and bones</li></ul><br aria-hidden=\"true\"><br aria-hidden=\"true\">The product contains vitamin C which<br aria-hidden=\"true\"><br aria-hidden=\"true\"><ul><li>contributes to the normal function of the immune system,</li><li>reducing fatigue and exhaustion,</li><li>normal collagen formation for normal skin function and</li><li>protect cells from oxidative stress.</li></ul>",
       "price": "39.99",
       "available": true
     },
@@ -160,7 +172,7 @@
       "title": "IMMUNACE CAPSULES - CELL PROTECTION",
       "imageUrl": "./assets/immunace.JPG",
       "alt": "Image with a box of capsules",
-      "description": "The Immunace formula was developed on the basis of extensive research to support the immune system and long-term protection of cells, and it works in two ways:<br><br><ul><li>short-term - helps the body defend against infections and compensate for vitamin C, which is consumed more during a cold</li><li>long-term - increases the level of resistance of the organism and provides effective protection of cells.</li></ul>",
+      "description": "The Immunace formula was developed on the basis of extensive research to support the immune system and long-term protection of cells, and it works in two ways:<br aria-hidden=\"true\"><br aria-hidden=\"true\"><ul><li>short-term - helps the body defend against infections and compensate for vitamin C, which is consumed more during a cold</li><li>long-term - increases the level of resistance of the organism and provides effective protection of cells.</li></ul>",
       "price": "24.99",
       "available": true
     },
@@ -170,7 +182,7 @@
       "title": "ORTHOMOL IMMUN A30 BAGS",
       "imageUrl": "./assets/immun.JPG",
       "alt": "Image with a blue box of medicine",
-      "description": "Orthomol Immun is a dietary product for special medical use (balanced diet). <br><br><ul><li>It contains micronutrients in a complex composition and with a well-balanced, scientifically based dosage.</li><li>Orthomol Immun is used for the treatment of nutritionally conditioned immune deficits, related to diet, which you may encounter, for example, after chemotherapy and radiation.</li><li>Orthomol Immun is intended for people with a weakened immune system, for example after chemotherapy and radiation, in elderly people, in cases of acute and chronic infections and diseases, after surgery.</li></ul>",
+      "description": "Orthomol Immun is a dietary product for special medical use (balanced diet). <br aria-hidden=\"true\"><br aria-hidden=\"true\"><ul><li>It contains micronutrients in a complex composition and with a well-balanced, scientifically based dosage.</li><li>Orthomol Immun is used for the treatment of nutritionally conditioned immune deficits, related to diet, which you may encounter, for example, after chemotherapy and radiation.</li><li>Orthomol Immun is intended for people with a weakened immune system, for example after chemotherapy and radiation, in elderly people, in cases of acute and chronic infections and diseases, after surgery.</li></ul>",
       "price": "125.99",
       "available": true
     },
@@ -180,7 +192,7 @@
       "title": "ORTHOMOL VISION A30 120 CPS",
       "imageUrl": "./assets/vision.JPG",
       "alt": "Image with a blue box of medicine",
-      "description": "Orthomol® Vision is a dietary supplement, important micronutrients for the eyes.<br><br><ul><li>With vitamin A, vitamin B2 (riboflavin), zinc, omega and omega-3 fatty acids (DHA) to maintain normal vision.</li><li>With lutein and zeaxanthin.</li><li>Orthomol® Vision does not contain gluten or lactose</li><li>The recommended dose should not be exceeded.</li><li>A dietary supplement is not a substitute for a varied, balanced diet and a healthy lifestyle.</li></ul>",
+      "description": "Orthomol® Vision is a dietary supplement, important micronutrients for the eyes.<br aria-hidden=\"true\"><br aria-hidden=\"true\"><ul><li>With vitamin A, vitamin B2 (riboflavin), zinc, omega and omega-3 fatty acids (DHA) to maintain normal vision.</li><li>With lutein and zeaxanthin.</li><li>Orthomol® Vision does not contain gluten or lactose</li><li>The recommended dose should not be exceeded.</li><li>A dietary supplement is not a substitute for a varied, balanced diet and a healthy lifestyle.</li></ul>",
       "price": "88.99",
       "available": true
     },
@@ -190,7 +202,7 @@
       "title": "ORTHOMOL AMD EXTRA 120 CPS",
       "imageUrl": "./assets/extra.JPG",
       "alt": "Image with a blue box of medicine",
-      "description": "Orthomol® AMD Extra is intended for the dietary treatment of advanced age-related macular degeneration. <br><br>What is Orthomol® AMD extra?<br><br>Orthomol® AMD extra is a dietary product with a special medical purpose. Orthomol® AMD extra is intended for the dietary treatment of advanced age-related macular degeneration.",
+      "description": "Orthomol® AMD Extra is intended for the dietary treatment of advanced age-related macular degeneration. <br aria-hidden=\"true\"><br aria-hidden=\"true\">What is Orthomol® AMD extra?<br aria-hidden=\"true\"><br aria-hidden=\"true\">Orthomol® AMD extra is a dietary product with a special medical purpose. Orthomol® AMD extra is intended for the dietary treatment of advanced age-related macular degeneration.",
       "price": "99.99",
       "available": true
     }

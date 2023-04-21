@@ -10,6 +10,8 @@ export class HomepageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    let main = document.getElementById('main-content');
+    main.focus();
   }
 
 }

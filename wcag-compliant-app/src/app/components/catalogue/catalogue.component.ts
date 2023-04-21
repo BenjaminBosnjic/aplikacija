@@ -19,6 +19,9 @@ export class CatalogueComponent implements OnInit {
   displayItems: any;
 
   ngOnInit(): void {
+    let main = document.getElementById('main-content');
+    main.focus();
+    
     this.loadItems();
   }
 

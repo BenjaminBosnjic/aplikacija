@@ -10,6 +10,8 @@ export class BookingSuccessComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    let main = document.getElementById('main-content');
+    main.focus();
   }
 
 }

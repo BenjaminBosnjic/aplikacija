@@ -23,6 +23,9 @@ export class PricesComponent implements OnInit {
   services = [];
 
   ngOnInit() {
+    let main = document.getElementById('main-content');
+    main.focus();
+    
     let serviceId = parseInt(this.route.snapshot.paramMap.get('id'));
     this.card = this.priceListService.getCard(serviceId).subscribe(card => {
       this.title = card.title;

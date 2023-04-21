@@ -31,6 +31,8 @@ export class BookingComponent implements OnInit {
   });
 
   ngOnInit(): void {
+    let main = document.getElementById('main-content');
+    main.focus();
   }
 
   saveBooking(event: any) {

@@ -1,1 +1,10 @@
-<p>search-results works!</p>
+<h1 role="heading" aria-level="1" class="text-center">Search results</h1><hr aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true">
+
+<div class="search-container">
+    <div *ngIf="noResults">
+        <h2 role="heading" aria-level="2">No results found</h2>
+    </div>
+    <div class="search-results" *ngFor="let link of links">
+        <a [routerLink]="link.url">{{ link.title }} - {{ link.text }}</a>
+    </div>
+</div>
