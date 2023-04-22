@@ -17,8 +17,6 @@ export class PriceListComponent implements OnInit {
   cards: any;
 
   ngOnInit(): void {
-    let main = document.getElementById('main-content');
-    main.focus();
 
     this.priceListService.getCards().subscribe((data: any[]) => {
       this.cards = data;

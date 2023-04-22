@@ -16,7 +16,13 @@
       "title": "Internal services",
       "text": "List of available invasive procedures.",
       "alt": "Image with surgreons operating",
-      "tags": ["internal", "surgery", "ultrasound", "coronagraphy", "astroscopy"],
+      "tags": [
+        "internal",
+        "surgery",
+        "ultrasound",
+        "coronagraphy",
+        "astroscopy"
+      ],
       "url": "/prices/1"
     },
     {
@@ -25,7 +31,12 @@
       "title": "Cosmetics",
       "text": "For all regular cosmetic procedures, check here.",
       "alt": "Image with hands during a manicure procedure",
-      "tags": ["cosmetics", "massage", "pedicure", "depilation"],
+      "tags": [
+        "cosmetics",
+        "massage",
+        "pedicure",
+        "depilation"
+      ],
       "url": "/prices/2"
     },
     {
@@ -34,7 +45,9 @@
       "title": "Medical credentials",
       "text": "If you need a credential for something, check here.",
       "alt": "Image with a medical document",
-      "tags": ["credential"],
+      "tags": [
+        "credential"
+      ],
       "url": "/prices/3"
     },
     {
@@ -43,7 +56,12 @@
       "title": "Ophthalmology services",
       "text": "If you need to see our available eye procedures, this is the place to go.",
       "alt": "Image with a patient having their eyes tested",
-      "tags": ["ophtamology", "tonometry", "angio", "ultrasound"],
+      "tags": [
+        "ophtamology",
+        "tonometry",
+        "angio",
+        "ultrasound"
+      ],
       "url": "/prices/4"
     },
     {
@@ -52,7 +70,13 @@
       "title": "Radialogy services",
       "text": "Need more medical info that can not be obtained regulary? Check here.",
       "alt": "Image with a CT machine in use",
-      "tags": ["radiology", "ct", "mri", "coronagraphy", "rtg"],
+      "tags": [
+        "radiology",
+        "ct",
+        "mri",
+        "coronagraphy",
+        "rtg"
+      ],
       "url": "/prices/5"
     },
     {
@@ -61,7 +85,13 @@
       "title": "Plastic surgery",
       "text": "Listing all of the possible facial restructuring procedures.",
       "alt": "Image with a patient having their face marked for plastic surgery",
-      "tags": ["plastic", "surgery", "liposuction", "rhinoplasty", "correction"],
+      "tags": [
+        "plastic",
+        "surgery",
+        "liposuction",
+        "rhinoplasty",
+        "correction"
+      ],
       "url": "/prices/6"
     }
   ],
@@ -917,6 +947,42 @@
       "endTime": "",
       "additionalInfo": "",
       "id": 1
+    },
+    {
+      "firstName": "Benjamin",
+      "lastName": "Bošnjić",
+      "address": "Mala Solina 40",
+      "email2": "bijelivo@gmail.com",
+      "phone": 62645971,
+      "date": "2023-04-24",
+      "startTime": "18:29",
+      "endTime": "19:29",
+      "additionalInfo": "awdasd",
+      "id": 2
+    },
+    {
+      "firstName": "Benjamin",
+      "lastName": "Bošnjić",
+      "address": "asdasd",
+      "email2": "bijelivo@gmail.com",
+      "phone": 313123,
+      "date": "2023-04-24",
+      "startTime": "11:32",
+      "endTime": "12:33",
+      "additionalInfo": "",
+      "id": 3
+    },
+    {
+      "firstName": "Benjamin",
+      "lastName": "Bošnjić",
+      "address": "Mala solina",
+      "email2": "bijelivo@gmail.com",
+      "phone": 42524234,
+      "date": "2023-04-23",
+      "startTime": "02:08",
+      "endTime": "05:52",
+      "additionalInfo": "haEfippOAdOIADWJHoi",
+      "id": 4
     }
   ]
 }

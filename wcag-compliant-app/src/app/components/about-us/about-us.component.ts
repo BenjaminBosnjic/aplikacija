@@ -10,8 +10,6 @@ export class AboutUsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    let main = document.getElementById('main-content');
-    main.focus();
   }
 
 }

@@ -1,57 +1,78 @@
 <h1 role="heading" aria-level="1" class="text-center">Book a Check-Up</h1><hr aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true">
 
-<P style="margin-bottom: 50px;">After inputing all of the neccessary data, click the square SUBMIT button at the end to send the information about your booked check up.</P>
+<p style="margin-bottom: 20px;">Please enter the necessary information into this form, so we have the data necessary to book you a check up. 
+  You will receive a confirmation email that details all of your input.</p>
+
+<p style="margin-bottom: 20px;">For keyboard users: date and time fiels can be inputed manually, or by opening their respective pickers by hitting enter or space when the focus is on the icon in the input.</p>
+
+<P style="margin-bottom: 50px;">After inputing all of the necessary data, click the square SUBMIT button at the end to send the information about your booked check up.</P>
 
 <form [formGroup]="bookingForm" role="form">
     <div class="row mb-4">
       <div class="col">
         <div class="form-outline">
           <label class="form-label" for="firstName"><b>First name (required)</b></label>
-          <input type="text" id="firstName" class="form-control" formControlName="firstName" />
+          <input type="text" id="firstName" class="form-control" formControlName="firstName" aria-required="true" />
+            <div *ngIf="bookingForm.controls['firstName'].touched && bookingForm.controls['firstName'].hasError('required')" class="text-danger mt-2"><b>First name must be entered</b></div>
+            <div *ngIf="bookingForm.controls['firstName'].dirty && bookingForm.controls['firstName'].value.length > 50" class="text-danger"><b>First name must contain no more than 50 letters</b></div>
         </div>
       </div>
       <div class="col">
         <div class="form-outline">
           <label class="form-label" for="lastName"><b>Last name (required)</b></label>
-          <input type="text" id="lastName" class="form-control" formControlName="lastName" />
+          <input type="text" id="lastName" class="form-control" formControlName="lastName" aria-required="true" />
+            <div *ngIf="bookingForm.controls['lastName'].touched && bookingForm.controls['lastName'].hasError('required')" class="text-danger mt-2"><b>First name must be entered</b></div>
+            <div *ngIf="bookingForm.controls['lastName'].dirty && bookingForm.controls['lastName'].value.length > 50" class="text-danger mt-2"><b>First name must contain no more than 50 letters</b></div>
         </div>
       </div>
     </div>
 
     <div class="form-outline mb-4">
       <label class="form-label" for="address"><b>Address</b></label>
-      <input type="text" id="address" class="form-control" formControlName="address" />
+      <input type="text" id="address" class="form-control" formControlName="address" aria-required="false" />
+      <div *ngIf="bookingForm.controls['address'].dirty && bookingForm.controls['address'].value.length > 100" class="text-danger mt-2"><b>Address must contain no more than 100 letters</b></div>
     </div>
   
     <div class="form-outline mb-4">
       <label class="form-label" for="email2"><b>Email (required)</b></label>
-      <input type="email" id="email2" class="form-control" formControlName="email" />
+      <input type="email" id="email2" class="form-control" formControlName="email2" aria-required="true" />
+      <div *ngIf="bookingForm.controls['email2'].touched && bookingForm.controls['email2'].hasError('required')" class="text-danger mt-2"><b>Email must be entered</b></div>
+      <div *ngIf="bookingForm.controls['email2'].dirty && bookingForm.controls['email2'].hasError('email')" class="text-danger mt-2"><b>Email must be in proper format, something like: example@gmail.com</b></div>
+      <div *ngIf="bookingForm.controls['email2'].dirty && bookingForm.controls['email2'].value.length > 50" class="text-danger mt-2"><b>Email must contain no more than 50 letters</b></div>
     </div>
   
     <div class="form-outline mb-4">
       <label class="form-label" for="phone"><b>Phone</b></label>
-      <input type="number" id="phone" class="form-control" formControlName="phone" />
+      <input type="number" id="phone" class="form-control" formControlName="phone" aria-required="false" />
+      <div *ngIf="bookingForm.controls['phone'].dirty && bookingForm.controls['phone'].value.length > 25" class="text-danger mt-2"><b>Phone number must contain no more than 25 numbers</b></div>
     </div>
 
     <div class="form-outline mb-4">
       <label class="form-label" for="date"><b>Date (required)</b></label>
-      <input id="date" class="form-control" type="date" formControlName="date" />
+      <input id="date" class="form-control" type="date" formControlName="date" aria-required="true" (change)="onDateChange($event)" />
+      <div *ngIf="bookingForm.controls['date'].touched && bookingForm.controls['date'].hasError('required')" class="text-danger mt-2"><b>A correct date must be entered</b></div>
+      <div *ngIf="dateInvalid" class="text-danger mt-2"><b>Date must be in the future</b></div>
     </div>
 
     <div class="form-outline mb-4">
       <label class="form-label" for="startTime"><b>Start time (required)</b></label>
-      <input id="startTime" type="time" class="form-control" formControlName="startTime" />
+      <input id="startTime" type="time" class="form-control" formControlName="startTime" aria-required="true" (change)="onTimeChange($event)" />
+      <div *ngIf="bookingForm.controls['startTime'].touched && bookingForm.controls['endTime'].touched && bookingForm.controls['startTime'].hasError('required')" class="text-danger mt-2"><b>Proper start time must be defined</b></div>
+      <div *ngIf="timeInvalid" class="text-danger mt-2"><b>Start time must be before End time</b></div>
     </div>
 
     <div class="form-outline mb-4">
       <label class="form-label" for="endTime"><b>End time (required)</b></label>
-      <input id="endTime" type="time" class="form-control" formControlName="endTime" />
+      <input id="endTime" type="time" class="form-control" formControlName="endTime" aria-required="true" (change)="onTimeChange($event)" />
+      <div *ngIf="bookingForm.controls['startTime'].touched && bookingForm.controls['endTime'].touched && bookingForm.controls['endTime'].hasError('required')" class="text-danger mt-2"><b>Proper end time must be defined</b></div>
+      <div *ngIf="timeInvalid" class="text-danger mt-2"><b>Start time must be before End time</b></div>
     </div>
 
     <div class="form-outline mb-4">
-      <label class="form-label" for="additional"><b>Additional information</b></label>
-      <textarea class="form-control" id="additional" rows="4" formControlName="additionalInfo"></textarea>
+      <label class="form-label" for="additionalInfo"><b>Additional information</b></label>
+      <textarea class="form-control" id="additionalInfo" rows="4" formControlName="additionalInfo" aria-required="false"></textarea>
+      <div *ngIf="bookingForm.controls['additionalInfo'].dirty && bookingForm.controls['additionalInfo'].value.length > 500" class="text-danger mt-2"><b>Maximum is 500 characters for additional information</b></div>
     </div>
     
-    <button type="button" class="btn btn-primary" style="width: 100%; height: 80px;" [disabled]="saving" (click)="saveBooking($event)"><b>SUBMIT</b></button>
+    <button type="button" class="btn btn-primary" style="width: 100%; height: 80px;" [disabled]="bookingForm.invalid || saving || dateInvalid || timeInvalid" (click)="saveBooking($event)"><b>SUBMIT</b></button>
   </form>
