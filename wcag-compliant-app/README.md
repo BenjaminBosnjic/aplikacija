@@ -1,27 +1,27 @@
 # WcagCompliantApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
+Projekat je radjen sa Angular verzijom 11.2.14 i Node verzijom 16.14.2. Koristen je windows PowerShell kao terminal
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Pokretanje json servera
 
-## Code scaffolding
+Aplikacija koristi json server kao pseudo backend. Da bi se pokrenuo mora se download json server, naći u terminalu gdje je db.json fajl i zatim pokrenuti sljedece komande
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  (ovo u slucaju da komanda ispod ne uspije pokrenuti server)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+json-server --watch db.json  
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Pokretanje aplikacije
 
-## Running end-to-end tests
+Da bi se pokrenula poželjno je da Node i Angular budu gore pomenute verzije, potrebno je odraditi (unutar wcag-compliant-app foldera)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+npm install
 
-## Further help
+ng build
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ng serve 
+
+
+Stranica se nalazi na http://localhost:4200/ adresi
